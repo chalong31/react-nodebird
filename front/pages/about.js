@@ -49,8 +49,8 @@ const Profile = () => {
   );
 };
 
-export const getStaticProps = wrapper.getStaticProps(async (context) => {
-  console.log('getStaticProps');
+export const getServerSideProps = wrapper.getServerSideProps(async (context) => {
+  // console.log('getStaticProps');
   context.store.dispatch({
     type: LOAD_USER_REQUEST,
     data: 1,
